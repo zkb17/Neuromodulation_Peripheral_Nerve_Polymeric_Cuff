@@ -1,0 +1,101 @@
+{
+  "sample": "Rat_Sciatic_Trial9",
+  "pseudonym": "Z_Rat_Sciatic",
+  "sex": "F",
+  "level": "Biceps_Femoris",
+  "scale": {
+    "scale_bar_length": 1000,
+    "shrinkage": 0
+  },
+  "boundary_separation": {
+    "fascicles": 1.0,
+    "nerve": 2.0
+  },
+  "modes": {
+    "mask_input": "INNERS",
+    "scale_input": "MASK",
+    "nerve": "PRESENT",
+    "deform": "NONE",
+    "ci_perineurium_thickness": "RAT_VN_INHOUSE_200601",
+    "reshape_nerve": "NONE",
+    "shrinkage_definition": "LENGTH_BACKWARDS"
+  },
+  "smoothing": {
+    "nerve_distance": 0,
+    "fascicle_distance": 0
+  },
+  "image_preprocessing": {
+    "fill_holes": true,
+    "object_removal_area": 10
+  },
+  "morph_count": 36,
+  "deform_ratio": 1,
+  "render_deform": false,
+  "Morphology": {
+    "Nerve": {
+      "area": 684465.7602388265
+    },
+    "Fascicles": [
+      {
+        "outer": {
+          "area": 28614.5,
+          "x": 307.70294189453125,
+          "y": 237.21524047851562,
+          "a": 176.67173767089844,
+          "b": 206.29075622558594,
+          "angle": 59.95896911621094
+        },
+        "inners": [
+          {
+            "area": 26166.711998856874,
+            "x": 307.6734924316406,
+            "y": 238.16378784179688,
+            "a": 168.24449157714844,
+            "b": 198.0343780517578,
+            "angle": 60.079490661621094
+          }
+        ]
+      },
+      {
+        "outer": {
+          "area": 217893.0,
+          "x": 29.77005386352539,
+          "y": 8.966203689575195,
+          "a": 512.1161499023438,
+          "b": 541.7427368164062,
+          "angle": 89.92498016357422
+        },
+        "inners": [
+          {
+            "area": 204406.80479566994,
+            "x": 29.773988723754883,
+            "y": 9.927556037902832,
+            "a": 495.4959411621094,
+            "b": 525.2406616210938,
+            "angle": 89.95999145507812
+          }
+        ]
+      },
+      {
+        "outer": {
+          "area": 57691.0,
+          "x": -312.59710693359375,
+          "y": -204.39227294921875,
+          "a": 247.23670959472656,
+          "b": 297.18096923828125,
+          "angle": 44.97927474975586
+        },
+        "inners": [
+          {
+            "area": 53622.721877475065,
+            "x": -312.59661865234375,
+            "y": -203.44931030273438,
+            "a": 237.64097595214844,
+            "b": 287.28900146484375,
+            "angle": 45.017154693603516
+          }
+        ]
+      }
+    ]
+  }
+}

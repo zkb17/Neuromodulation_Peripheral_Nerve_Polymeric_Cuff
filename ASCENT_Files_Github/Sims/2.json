@@ -1,0 +1,94 @@
+{
+  "pseudonym": "CE_MEA_OnRatSciatic",
+  "n_dimensions": 1,
+  "active_srcs": {
+    "CE_MEA.json": [[1,-1,0,0,0,0,0,0],[0,1,-1,0,0,0,0,0],[0,0,1,-1,0,0,0,0],[0,0,0,1,-1,0,0,0],[0,0,0,0,1,-1,0,0],[0,0,0,0,0,1,-1,0],[0,0,0,0,0,0,1,-1],[-1,0,0,0,0,0,0,1]],
+    "default": [[1,-1,0,0,0,0,0,0],[0,1,-1,0,0,0,0,0],[0,0,1,-1,0,0,0,0],[0,0,0,1,-1,0,0,0],[0,0,0,0,1,-1,0,0],[0,0,0,0,0,1,-1,0],[0,0,0,0,0,0,1,-1],[-1,0,0,0,0,0,0,1]]
+  },
+  "fibers": {
+    "plot": true,
+    "mode": "MRG_INTERPOLATION",
+    "xy_trace_buffer": 5.0,
+    "z_parameters": {
+      "diameter":{
+        "mode": "TRUNCNORM",
+        "mu": 6.5,
+        "std": 2,
+        "n_std_limit": 2.2,
+        "seed": 140
+      },
+      "min": 0,
+      "max": 12500,
+      "offset": 0,
+      "seed": 140
+    },
+    "xy_parameters": {
+      "mode": "UNIFORM_DENSITY",
+      "top_down": false,
+      "target_number": 30,
+      "maximum_number": 120,
+      "seed": 140
+    }
+  },
+  "waveform": {
+    "global": {
+      "unit": "ms",
+      "dt": 0.001,
+      "start": 0,
+      "on": 0,
+      "off": 10,
+      "stop": 10
+    },
+    "EXPLICIT": {
+      "index": [29,30,31,32,33,34,35,36,37,38,39,40],
+      "dt_atol": 0.001,
+      "period_repeats": 1,
+      "pulse_repetition_freq": 1,
+      "digits": 10
+    }
+  },
+  "intracellular_stim": {
+    "times": {
+      "pw": 0,
+      "IntraStim_PulseTrain_delay": 0,
+      "IntraStim_PulseTrain_dur": 0
+    },
+    "pulse_repetition_freq": 0,
+    "amp": 0,
+    "ind": 2
+  },
+  "saving": {
+    "space": {
+      "vm": false,
+      "gating": false,
+      "times": [0]
+    },
+    "time": {
+      "vm": false,
+      "gating": false,
+      "istim": false,
+      "locs": [0]
+    },
+    "runtimes": false
+  },
+  "protocol": {
+    "mode": "ACTIVATION_THRESHOLD",
+    "initSS": -200,
+    "dt_initSS": 10,
+    "threshold": {
+      "value": -30,
+      "n_min_aps": 1,
+      "ap_detect_location": 0.9
+    },
+    "bounds_search": {
+      "mode": "PERCENT_INCREMENT",
+      "step": 10,
+      "top": -1,
+      "bottom": -0.01
+    },
+    "termination_criteria": {
+      "mode": "PERCENT_DIFFERENCE",
+      "percent": 1
+    }
+  }
+}
